@@ -1,0 +1,19 @@
+DATABASE  ice_cream_store
+
+CREATE TABLE IF NOT EXISTS ice_cream (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    type VARCHAR(100) NOT NULL,
+    price_per_kg FLOAT NOT NULL
+);
+
+
+INSERT INTO ice_cream (name, type, price_per_kg) VALUES
+('Vanilla Delight', 'Classic', 10.5),
+('Chocolate Heaven', 'Premium', 15.0),
+('Strawberry Bliss', 'Classic', 12.0),
+('Mint Chocolate Chip', 'Premium', 14.0),
+('Mango Tango', 'Fruit', 13.5),
+('Blueberry Swirl', 'Fruit', 11.5),
+('Cookie Dough', 'Special', 16.0),
+('Caramel Crunch', 'Special', 17.0);
